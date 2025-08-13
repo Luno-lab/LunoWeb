@@ -99,7 +99,7 @@ function App() {
             <Card className="bg-gray-900 border-gray-800">
               <CardContent className="p-4">
                 <div className="flex items-center justify-between">
-                  <code className="text-green-400 text-sm">{">"} npm i @luno-kit/react @luno-kit/ui</code>
+                  <code className="text-green-400 text-sm">{">"} npm i @luno-kit/react @luno-kit/ui @tanstack/react-query</code>
                   <Button 
                     variant="ghost" 
                     size="sm" 

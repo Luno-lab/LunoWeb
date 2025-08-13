@@ -88,7 +88,7 @@ export function ProblemSolution() {
               </div>
               <h3 className="text-xl font-semibold text-white mb-3">Dynamic Imports</h3>
               <p className="text-gray-400">
-                Dynamically imports wallet and its dependencies. Reduces initial load time and saves bandwidth by avoiding unnecessary code.
+                Simple React hooks and components for seamless wallet integration.
               </p>
             </motion.div>
 
