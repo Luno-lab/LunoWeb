@@ -28,9 +28,11 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="gap-2">
-              <BookOpen className="h-4 w-4" />
-              Docs
+            <Button variant="ghost" size="sm" className="gap-2" asChild>
+              <a href="https://github.com/Luno-lab/LunoKit/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                <BookOpen className="h-4 w-4" />
+                Docs
+              </a>
             </Button>
             <Button variant="ghost" size="sm" className="gap-2" asChild>
               <a href="https://github.com/Luno-lab/LunoKit" target="_blank" rel="noopener noreferrer">
@@ -53,9 +55,11 @@ export function Header() {
         {isMenuOpen && (
           <div className="md:hidden border-t border-gray-200 py-4">
             <div className="flex flex-col gap-2">
-              <Button variant="ghost" size="sm" className="gap-2 justify-start">
-                <BookOpen className="h-4 w-4" />
-                Docs
+              <Button variant="ghost" size="sm" className="gap-2 justify-start" asChild>
+                <a href="https://github.com/Luno-lab/LunoKit/blob/main/README.md" target="_blank" rel="noopener noreferrer">
+                  <BookOpen className="h-4 w-4" />
+                  Docs
+                </a>
               </Button>
               <Button variant="ghost" size="sm" className="gap-2 justify-start" asChild>
                 <a href="https://github.com/Luno-lab/LunoKit" target="_blank" rel="noopener noreferrer">
