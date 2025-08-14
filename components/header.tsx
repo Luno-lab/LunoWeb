@@ -1,20 +1,13 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Github, BookOpen, Menu, X } from "lucide-react"
+import { Github, BookOpen, Menu, X, Send } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  const scrollToIntegration = () => {
-    const element = document.getElementById("integration")
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-    setIsMenuOpen(false) // Close mobile menu after clicking
-  }
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-gray-200 bg-white/80 backdrop-blur-sm">
@@ -40,8 +33,11 @@ export function Header() {
                 GitHub
               </a>
             </Button>
-            <Button size="sm" className="bg-black hover:bg-gray-800" onClick={scrollToIntegration}>
-              Get Started
+            <Button size="sm" className="gap-2 bg-black hover:bg-gray-800" asChild>
+              <a href="https://t.me/+sPFPCbmbG0gyYzE1" target="_blank" rel="noopener noreferrer">
+                <Send className="h-4 w-4" />
+                Telegram
+              </a>
             </Button>
           </div>
 
@@ -67,8 +63,11 @@ export function Header() {
                   GitHub
                 </a>
               </Button>
-              <Button size="sm" className="bg-black hover:bg-gray-800 justify-start" onClick={scrollToIntegration}>
-                Get Started
+              <Button size="sm" className="gap-2 bg-black hover:bg-gray-800 justify-start" asChild>
+                <a href="https://t.me/+sPFPCbmbG0gyYzE1" target="_blank" rel="noopener noreferrer">
+                  <Send className="h-4 w-4" />
+                  Telegram
+                </a>
               </Button>
             </div>
           </div>
