@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Open-source Web3 account connection infrastructure for the Polkadot ecosystem. Build better DApps with less complexity.",
-  keywords: ["Web3 Account", "Polkadot", "DApp", "React", "polkadotjs", "Open Source", "Account Connection", "Connect Wallet", "Substrate","Wallet Connect"],
+  keywords: ["lunokit", "LunoKit", "lunolab", "Lunolab", "Web3 Account", "Polkadot", "DApp", "React", "polkadotjs", "Open Source", "Account Connection", "Connect Wallet", "Substrate", "Wallet Connect", "Polkadot SDK", "Web3 Infrastructure"],
   authors: [{ name: "Lunolab" }],
   creator: "Lunolab",
   publisher: "Lunolab",
