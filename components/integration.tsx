@@ -34,13 +34,13 @@ export function Integration() {
 
   const copyCodeSnippet = async () => {
     const code = `import { LunoKitProvider, ConnectButton } from '@luno-kit/ui'
-import { createConfig, defineChain, kusama, polkadot, polkadotjs, subwallet } from '@luno-kit/react'
+import { createConfig, defineChain, kusama, polkadot, polkadotjsConnector, subwalletConnector } from '@luno-kit/react'
 import '@luno-kit/ui/styles.css'
 
 const config = createConfig({
   appName: 'My Luno App',
   chains: [polkadot, kusama],
-  connectors: [polkadotjs(), subwallet()],
+  connectors: [polkadotjsConnector(), subwalletConnector()],
   autoConnect: true,
 })
 
@@ -158,8 +158,8 @@ function App() {
                         <span className="text-white">defineChain</span>,{" "}
                         <span className="text-white">kusama</span>,{" "}
                         <span className="text-white">polkadot</span>,{" "}
-                        <span className="text-white">polkadotjs</span>,{" "}
-                        <span className="text-white">subwallet</span> {"}"}{" "}
+                        <span className="text-white">polkadotjsConnector</span>,{" "}
+                        <span className="text-white">subwalletConnector</span> {"}"}{" "}
                         <span className="text-blue-300">from</span>{" "}
                         <span className="text-green-300">'@luno-kit/react'</span>
                       </div>
@@ -182,8 +182,8 @@ function App() {
                       </div>
                       <div className="leading-6 ml-4">
                         <span className="text-white">connectors</span>: [
-                        <span className="text-white">polkadotjs</span>(),{" "}
-                        <span className="text-white">subwallet</span>()],
+                        <span className="text-white">polkadotjsConnector</span>(),{" "}
+                        <span className="text-white">subwalletConnector</span>()],
                       </div>
                       <div className="leading-6 ml-4">
                         <span className="text-white">autoConnect</span>: <span className="text-white">true</span>
