@@ -34,14 +34,16 @@ export function Integration() {
 
   const copyCodeSnippet = async () => {
     const code = `import { LunoKitProvider, ConnectButton } from '@luno-kit/ui'
-import { createConfig, defineChain, kusama, polkadot, polkadotjsConnector, subwalletConnector } from '@luno-kit/react'
+import { createConfig } from '@luno-kit/react'
+import { polkadot, kusama } from '@luno-kit/react/chains'
+import { polkadotjsConnector, subwalletConnector } from '@luno-kit/react/connectors'
 import '@luno-kit/ui/styles.css'
 
 const config = createConfig({
   appName: 'My Luno App',
   chains: [polkadot, kusama],
   connectors: [polkadotjsConnector(), subwalletConnector()],
-  autoConnect: true,
+  autoConnect: true
 })
 
 function App() {
@@ -100,9 +102,9 @@ function App() {
               <CardContent className="p-4">
                 <div className="flex items-center justify-between">
                   <code className="text-green-400 text-sm">{">"} npm i @luno-kit/react @luno-kit/ui @tanstack/react-query</code>
-                  <Button 
-                    variant="ghost" 
-                    size="sm" 
+                  <Button
+                    variant="ghost"
+                    size="sm"
                     className="text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
                     onClick={copyInstallCommand}
                   >
@@ -154,14 +156,23 @@ function App() {
                       </div>
                       <div className="leading-6">
                         <span className="text-blue-300">import</span> {"{"}{" "}
-                        <span className="text-white">createConfig</span>,{" "}
-                        <span className="text-white">defineChain</span>,{" "}
-                        <span className="text-white">kusama</span>,{" "}
-                        <span className="text-white">polkadot</span>,{" "}
-                        <span className="text-white">polkadotjsConnector</span>,{" "}
-                        <span className="text-white">subwalletConnector</span> {"}"}{" "}
+                        <span className="text-white">createConfig</span>{" }"}{" "}
                         <span className="text-blue-300">from</span>{" "}
                         <span className="text-green-300">'@luno-kit/react'</span>
+                      </div>
+                      <div className="leading-6">
+                        <span className="text-blue-300">import</span> {"{"}{" "}
+                        <span className="text-white">kusama</span>,{" "}
+                        <span className="text-white">polkadot</span>{" }"}{" "}
+                        <span className="text-blue-300">from</span>{" "}
+                        <span className="text-green-300">'@luno-kit/react/chains'</span>
+                      </div>
+                      <div className="leading-6">
+                        <span className="text-blue-300">import</span> {"{"}{" "}
+                        <span className="text-white">polkadotjsConnector</span>,{" "}
+                        <span className="text-white">subwalletConnector</span>{" }"}{" "}
+                        <span className="text-blue-300">from</span>{" "}
+                        <span className="text-green-300">'@luno-kit/react/connectors'</span>
                       </div>
                       <div className="leading-6">
                         <span className="text-blue-300">import</span>{" "}
@@ -225,9 +236,9 @@ function App() {
                 </div>
 
                 {/* Copy button */}
-                <Button 
-                  variant="ghost" 
-                  size="sm" 
+                <Button
+                  variant="ghost"
+                  size="sm"
                   className="absolute top-2 right-2 text-gray-400 hover:text-white hover:bg-gray-800 transition-colors"
                   onClick={copyCodeSnippet}
                 >
