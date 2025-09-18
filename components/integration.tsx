@@ -181,7 +181,7 @@ function App() {
                       <div className="leading-6"></div>
                       <div className="leading-6">
                         <span className="text-blue-300">const</span> <span className="text-white">config</span> ={" "}
-                        <span className="text-white">createConfig</span>({"{"})
+                        <span className="text-white">createConfig</span>{"({"}
                       </div>
                       <div className="leading-6 ml-4">
                         <span className="text-white">appName</span>:{" "}
@@ -200,7 +200,7 @@ function App() {
                         <span className="text-white">autoConnect</span>: <span className="text-white">true</span>
                         ,
                       </div>
-                      <div className="leading-6">{"}"}</div>
+                      <div className="leading-6">{"})"}</div>
                       <div className="leading-6"></div>
                       <div className="leading-6">
                         <span className="text-blue-300">function</span> <span className="text-white">App</span>(){" "}
