@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -38,8 +38,14 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <Badge variant="outline" className="mb-4 px-3 py-1 border-gray-200">
-                <Sparkles className="mr-1 h-3 w-3" />
-                Open Source Web3 Infrastructure
+                <Image
+                  src="/images/w3f.svg"
+                  alt="Web3 Foundation"
+                  width={12}
+                  height={12}
+                  className="mr-1"
+                />
+                Supported by Web3 Foundation
               </Badge>
             </motion.div>
 
