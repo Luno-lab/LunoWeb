@@ -175,6 +175,13 @@ function App() {
                         <span className="text-green-300">'@luno-kit/react/connectors'</span>
                       </div>
                       <div className="leading-6">
+                        <span className="text-blue-300">import</span> {"{"}{" "}
+                        <span className="text-white">QueryClientProvider</span>,{" "}
+                        <span className="text-white">QueryClient</span>{" }"}{" "}
+                        <span className="text-blue-300">from</span>{" "}
+                        <span className="text-green-300">'@tanstack/react-query'</span>
+                      </div>
+                      <div className="leading-6">
                         <span className="text-blue-300">import</span>{" "}
                         <span className="text-green-300">'@luno-kit/ui/styles.css'</span>
                       </div>
@@ -201,6 +208,9 @@ function App() {
                         ,
                       </div>
                       <div className="leading-6">{"})"}</div>
+                      <div className="leading-6">
+                        <span className="text-blue-300">const</span> <span className="text-white">queryClient</span> = <span className="text-white">new </span><span className={'text-green-300'}>QueryClient()</span>
+                      </div>
                       <div className="leading-6"></div>
                       <div className="leading-6">
                         <span className="text-blue-300">function</span> <span className="text-white">App</span>(){" "}
@@ -211,17 +221,28 @@ function App() {
                       </div>
                       <div className="leading-6 ml-8">
                         {"<"}
-                        <span className="text-white">LunoKitProvider</span>{" "}
-                        <span className="text-blue-300">config</span>={"{"}config{"}"}
+                        <span className="text-white">QueryClientProvider</span>{" "}
+                        <span className="text-blue-300">client</span>={"{"}queryClient{"}"}
                         {">"}
                       </div>
                       <div className="leading-6 ml-12">
                         {"<"}
+                        <span className="text-white">LunoKitProvider</span>{" "}
+                        <span className="text-blue-300">config</span>={"{"}config{"}"}
+                        {">"}
+                      </div>
+                      <div className="leading-6 ml-16">
+                        {"<"}
                         <span className="text-white">ConnectButton</span> {"/>"}
+                      </div>
+                      <div className="leading-6 ml-12">
+                        {"</"}
+                        <span className="text-white">LunoKitProvider</span>
+                        {">"}
                       </div>
                       <div className="leading-6 ml-8">
                         {"</"}
-                        <span className="text-white">LunoKitProvider</span>
+                        <span className="text-white">QueryClientProvider</span>
                         {">"}
                       </div>
                       <div className="leading-6 ml-4">)</div>
